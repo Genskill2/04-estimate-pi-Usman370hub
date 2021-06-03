@@ -12,16 +12,7 @@ for(int i = 1; i<=x; i++){
  return 2*pie;
  }
 }
-  float wallis_pi(int x)
-{
-float pie = 1.00;
-for(int i = 1; i<=x; i++){
- pie*=((float) (4*i*i)/(4*i*i)-1);
- printf("pie= %f\n",pie);
- return 2*pie;
- }
-}
-
+ 
 int main(void) {
   float pi;
   for (int i=0; i<5; i++) {
