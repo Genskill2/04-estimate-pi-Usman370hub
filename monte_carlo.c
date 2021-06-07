@@ -39,5 +39,25 @@ int main(void) {
   }
 }
 
+float mc_pi(int n) {
+
+float pie,x,y,k;
+int crcl= 0;
+
+   for(int i=0 ; i<n ; i++) {
+   
+   x = frandom();
+   y = frandom();
+   k = (x*x + y*y);
+    
+    if( k <= 1 )
+    crcl++;
+    }
+    
+    pie = (float)crcl / n ;
+    
+    return 4*pie;
+    
+    }
 
 
